@@ -1,0 +1,48 @@
+baseURL = "https://molkjar.dk"
+languageCode = "en-us"
+title = "Frederik Mølkjær Andersen"
+theme="archie"
+copyright = "© Me"
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+[params]
+	mode="light"
+	useCDN=false
+	subtitle = "Mathematical Biology, Computational Statistics, Music, Food and Tech"
+	katex = true
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/molkjar/"
+
+[[params.social]]
+name = "Twitter - I will not call it X"
+icon = "twitter"
+url = "https://twitter.com/molkjara/"
+
+[[params.social]]
+name = "Google Scholar"
+icon = "google-scholar"
+url = "https://scholar.google.dk/citations?user=PYxpBiMAAAAJ&hl=da/"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4

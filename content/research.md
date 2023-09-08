@@ -17,6 +17,6 @@ I have done as many independent projects as I could through my studies. I have e
 
 [Project in Statistics: High-Dimensional Inference for Ornstein-Uhlenbeck Processes](/files/main.pdf)
 
-[Bachelor's Project: Modelling COVID-19 with a realistic population network model: Will New York achieve herd immunity?](/files/BachelorReport.pdf)
+[Bachelor's Thesis: Modelling COVID-19 with a realistic population network model: Will New York achieve herd immunity?](/files/BachelorReport.pdf)
 
 

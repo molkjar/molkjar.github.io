@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frederik Mølkjær Andersen</title>
+</head>
+
+<body>
+  <!-- This makes a sample path from some process. It would be VERY nice to implement a small branching process (just Markovian) path like this and show togehter with its mean -->
+  <!-- <canvas id="myCanvas" style="margin-left: -100px;"></canvas>
+
+  <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    // Set canvas size to window size
+    canvas.width = window.innerWidth;
+    canvas.height = 200;
+
+    // Set line width
+    ctx.lineWidth = 1.2;
+    ctx.strokeStyle = 'black'; // was 'gray' before
+
+    // Start at the top left (large loss)
+    var lineX = 0;
+    var lineYTrain = 100; // Training loss
+    var lineYVal = 100; // Validation loss
+    var lineY = 100;
+
+    // For controlling the decrease rate
+    var decreaseRateTrain = canvas.height / 1000 + Math.random(); // Adding initial randomness
+    var decreaseRateVal = canvas.height / 1000 + 0.1 // Math.random(); // Adding initial randomness
+
+    // Begin the paths
+    ctx.beginPath();
+    ctx.moveTo(lineX, lineYTrain);
+    ctx.strokeStyle = 'black';
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(lineX, lineYVal);
+    ctx.strokeStyle = 'black';
+    ctx.stroke();
+
+    // Update the line position every 100ms
+    setInterval(function () {
+      ctx.beginPath();
+      ctx.moveT(lineX, lineY)
+
+      lineX += canvas.width / 50; // Move right
+
+
+      // Validation loss
+      ctx.beginPath();
+      ctx.moveTo(lineX, lineYVal);
+      lineYVal += decreaseRateVal + (Math.random() - 0.5) * 4; // Steeper ascent with randomness
+      // Add a small upward trend to the validation loss after a certain point to simulate overfitting
+      if (lineX > canvas.width / 2) {
+        decreaseRateVal *= 0.98 + Math.random() * 0.01; // Randomly slow down the rate of increase
+      } else {
+        decreaseRateVal *= 0.99 + Math.random() * 0.01; // Randomly slow down the rate of increase
+      }
+      ctx.lineTo(lineX, lineYVal);
+      ctx.strokeStyle = 'black';
+      ctx.stroke();
+    }, 1);
+  </script> -->
+
+  <header>
+    <h1>Frederik Mølkjær Andersen</h1>
+    <!-- <div id="nav">
+      <a href="about.html">About</a>
+    </div> -->
+    <hr>
+  </header>
+  <p>
+    Hi there! You've landed on my website, here you can find some basic information about me and the stuff that I spend
+    my time on. I am a mathematician and statistician by training, now working on the probabilistic foundations of
+    theoretical biology and epidemiology, in particular I study stochastic processes which are inspired by the evolution
+    of species or the spread of diseases. When not thinking about such things, you'll find me with my <a
+      href="https://frbbb.dk/">brass band</a>, reading a book or cooking a nice meal.
+  </p>
+
+  <p>
+    The most effective way for me to learn is to write. So I will strive to post small writings about what I am
+    currently learning, what I enjoy doing or about some technicalities not profound enough to published anywhere else.
+  </p>
+
+  <div class="row">
+    <div class="column">
+      <h3>Academic interests</h3>
+      <ul>
+        <li>Branching processes</li>
+        <li>Coalescent processes</li>
+        <li>Applied Geometry</li>
+        <li>Theoretical biology</li>
+        <li>Phylogenetics</li>
+        <li>Modeling of disease spread</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Education</h3>
+      <ul>
+        <li>MSc. Statistics, 2024</li>
+        <li style="list-style-type: none; color:grey;">University of Copenhagen</li>
+        <li>BSc. Mathematics, 2021</li>
+        <li style="list-style-type: none; color:grey;">University of Copenhagen</li>
+      </ul>
+    </div>
+    <!-- <div class="column">
+
+    </div> -->
+  </div>
+
+  <h3>What is new?</h3>
+  <ul>
+    <li>On January 19th I defended my master's thesis <i>Stochastic Branching Trees</i>. I will probably write a bit
+      about in on this site soon.</li>
+    <li>I am trying to build this website using as little unnecessary code such as static site generators. I will not need anything fancy on my website, and will <a href="https://justinjackson.ca/words.html"">focus on content</a>.</li>
+  </ul>
+
+  <!-- <h2>Research</h2>
+
+
+
+  <h2>Education</h2>
+  <p>
+    I hold a bachelor's degree in Mathematics and a master's in Statistics both from the University of Copenhagen, with
+    a small stint at UC Berkeley. I spent most of my time learning about probability theory and its use in statistics,
+    biology and epidemiology.
+  </p>
+  <p>
+    My master's thesis was titled <i>Stochastic Branching Trees</i> and was a treatise on how to use Bellman-Harris
+    processes to model reduced phylogenetic trees, with an emphasis on a rigorous mathematical foundation. I derived the
+    distribution of the branching process, counting the width of a reduced phylogenetic tree, allowing for time- and
+    age-dependent speciation and extinction dynamics. Under these dynamics I also derive the distribution of the reduced
+    phylogenetic tree, characterized by a density function, in principle allowing maximum likelihood estimation of the
+    evolutionary dynamics.
+  </p>
+
+
+  <h2>Teaching</h2>
+  <p>
+    During my studies, I have been so lucky as to TA in around 14 courses for mathematicians, statisticians as well as
+    students in biology-related fields. Teaching lies close to my heart and I enjoy preparing expositional material for
+    students.
+  </p>
+
+
+  <hr>
+  <h1>Currents</h1>
+  <h2>Learning</h2>
+  <ul>
+    <li>Coalescent processes and their connection to branching processes</li>
+    <li>The geometry of tree structures</li>
+    <li>The biology behind my models. With my currently limited knowledge of biology, developing matematical desriptions
+      of it is hard. Thus I am trying to learn at least the fundamentals of (molecular) evolution.</li>
+  </ul>
+
+  <h2>Enjoying</h2>
+  <div class="row">
+    <div class="column">
+      <h3>Music</h3>
+      <ul>
+        <li>Hadsel by Beirut</li>
+        <li>Massaa, an oriental jazzy group</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Books</h3>
+      <ul>
+        <li>The Billion Dollar Spy, David E. Hoffman</li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <h3>Food and drinks</h3>
+      <ul>
+        <li>Well-made pilsners</li>
+        <li>Middle eastern cuisine and Yotam Ottolenghi</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Technology</h3>
+      <ul>
+        <li>Arc Browser</li>
+        <li>MediaMate</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <hr>
+  <h1>The blob</h1>
+  <p>
+    Knowledge, opinions and everything in between. This is my blo<s>g</s>b. Eveything that does not deserve its own page
+    is down here. Please don't take anything here too serious, there are a lot of half-baked thoughts, but do reach out
+    if you would like to discuss any of them.
+  </p>
+
+  <h2>Loaded websites</h2>
+  <p>
+    I initially tried to build a website using one of the many static site generator frameworks. I tried Hugo, Jekyll,
+    Eleventy and a bunch more.
+  </p>
+ -->
+
+
+
+  <hr>
+  <footer>
+    <p>Reach out if anything on here seems wrong or you just wanna chat! <br />
+      <a href="https://twitter.com/molkjara">twitter</a>,
+      <a href="https://github.com/molkjar">github</a>,
+      molkjara [at] gmail [dot] com
+    </p>
+    <!-- ethos inspo by karpathy.ai + motherfuckingwebsite.com -->
+    <p>Frederik Mølkjær Andersen, 2024. (Do whatever you want with the content)</p>
+  </footer>
+</body>
+
+</html>

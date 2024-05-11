@@ -26,7 +26,6 @@ h2 {
 	font-size: 0.9rem;
   color: #a00;
 	padding-top: 1rem;
-	/* padding-bottom: 1.2rem; */
 }
 h2:before {
    content: "# ";
@@ -63,7 +62,6 @@ blockquote {
 
 a:link,
 a:visited {
-    /* font-style: italic; */
     color: #00a;
     text-decoration: underline;
 }

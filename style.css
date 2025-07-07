@@ -13,6 +13,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-color: #fff;
+  color: #000;
 }
 
 .content {
@@ -22,21 +24,22 @@ body {
 .footer {
   flex-grow: 0;
   flex-shrink: 0;
-	padding-top: 2rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 h1 {
-	font-size: 0.9rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
-	padding-top: 1rem;
-  font-weight: normal;
+  padding-top: 1rem;
+  font-weight: bold;
+  color: rgb(199, 80, 42); /* Added orange color to match H2 and links */
 }
 
 h2 {
-	font-size: 0.9rem;
-  color: #a00;
-	padding-top: 1rem;
+  font-size: 0.9rem;
+  color: rgb(199, 80, 42);
+  padding-top: 1rem;
 }
 h2:before {
    content: "# ";
@@ -46,35 +49,52 @@ p,
 ul {
   font-size: 0.9rem;
   line-height: 1.25rem;
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 ul {
-	padding-inline-start: 1rem;
+  padding-inline-start: 1rem;
+}
 
-	li {
-		list-style: disc;
-	}
+ul li {
+  list-style: disc;
 }
 
 blockquote {
-	font-style: italic;
+  font-style: italic;
 }
 
 a:link,
 a:visited {
-    color: #00a;
-    text-decoration: underline;
+  color: rgb(199, 80, 42);
+  text-decoration: underline;
 }
 
 hr {
-    display: block;
-    unicode-bidi: isolate;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
 }
+
+/* Dark mode support */
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  a:link,
+  a:visited {
+    color: rgb(219, 100, 62);
+  }
+  
+  h1, h2 {
+    color: rgb(219, 100, 62); /* Both H1 and H2 get the brighter orange in dark mode */
+  }
+} */
